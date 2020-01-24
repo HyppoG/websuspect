@@ -1,0 +1,46 @@
+spring:
+  profiles: default,local
+  devtools:
+    livereload:
+      enabled: true
+  datasource:
+    initialization-mode: always
+    url: jdbc:h2:mem:testdb;MODE=MYSQL
+    username: dbuser
+    password: dbpassword
+  jpa:
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+  mvc:
+    view:
+       prefix: /WEB-INF/jsp/
+       suffix: .jsp
+  messages:
+     basename: message
+server:
+  servlet:
+    session:
+      cookie:
+        http-only: false
+debug: false
+logging:
+  level:
+    root: INFO
+      
+shippingXML: shipping.xml
+
+flight-images: src/main/resources/static/images/flights
+
+upload.location: src/main/resources/
+tempUpload.location: src/main/resources/tmp
+upload.maxsize: 
+include.file_extension: xml
+
+security.csrfTokenRequestKey: _csrfToken
+security.csrfTokenSessionKey: _csrfToken
+security.login.maxAttempts: 3
+security.login.within: 30
+security.login.lockTime: 30
+    

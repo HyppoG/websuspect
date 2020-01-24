@@ -1,0 +1,8 @@
+<shippingPrices>
+	<city>
+		<name>Gouda</name>
+		<shippingType price="10">Normal</shippingType>
+		<shippingType price="20">Express</shippingType>
+		<shippingType price="30">Super Express</shippingType>
+	</city>
+</shippingPrices>
