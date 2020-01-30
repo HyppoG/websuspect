@@ -1,3 +1,5 @@
+//Test app file
+
 package com.test.vulnerableapp;
 
 import java.util.Properties;
